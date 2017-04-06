@@ -1,0 +1,243 @@
+/*** MENU ***/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+	z-index: 999;
+}
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+	margin-right:18px;
+}
+.sf-menu a {
+	display:		block;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	font-weight:800;
+	color:#777777;
+	text-transform:uppercase;
+	position:		relative;
+}
+
+
+.sf-menu a:hover,
+.sf-menu a.active,
+.sf-menu li.sfHover > a {
+	color:#d5d5d5;
+	text-decoration:none;
+}
+
+.sf-menu ul a:hover,
+.sf-menu ul li.sfHover > a {
+	color:#454545;
+	background:#e1e1e1;	
+}
+
+
+.sf-menu ul ul a:hover,
+.sf-menu ul ul li.sfHover > a {
+	color:#fff;
+	background:#4d4d4d;	
+}
+
+
+
+.menu-arrow {
+    background: url("../images/marker1.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 3px;
+    margin-left: 1px;
+    margin-top: 7px;
+    width: 5px;
+}
+
+nav {
+    float: left;
+    padding-left: 27px;
+    padding-top: 6px;
+}
+
+.sf-menu ul {
+    background: #4D4D4D;
+    padding: 22px 0;
+    position: absolute;
+    top: -999em;
+    width: 168px;
+}
+
+.sf-menu ul ul {
+    background: #e1e1e1;
+}
+.sf-menu ul  .menu-arrow {
+    margin-left: 6px;
+    margin-top: 6px;
+	background: url(../images/marker2.png) no-repeat 0 0 ;
+}
+.sf-menu ul li {
+	width:			100%;
+	margin:0;	
+}
+.sf-menu ul a {
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	line-height:14px;
+	padding:8px 0 8px 29px;
+	font-weight:normal;
+}
+
+
+.sf-menu ul ul a {
+	color:#454545;
+}
+
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left: -27px;
+    top: 24px; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left: 148px;
+    top: -22px;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+
+
+.menu>li>.sf-with-ul span {
+	display: block;
+	position: absolute;
+	background: url(../images/arrows.png) 0 0 no-repeat;
+	width: 7px;
+	height: 5px;
+	left: 50%;
+	margin-left: -4px;
+	bottom: -10px;
+}
+
+.menu>li>ul>li>.sf-with-ul>span {
+	display: block;
+	position: absolute;
+	background: url(../images/arrows.png) 0 bottom no-repeat;
+	width: 7px;
+	height: 5px;
+	left: 50%;
+	margin-left: -4px;
+	bottom: -5px;
+	pointer-events: none;
+} 
+
+.carousel  {
+	overflow: hidden;
+}
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+@media only screen and (max-width: 995px) {
+
+
+
+
+
+a.last3 {
+	width: auto !important;
+}
+
+  header nav {
+  	margin-left: 0;
+  }
+
+  
+
+
+}
+@media only screen and (max-width: 767px) {
+	.menu_block {
+		float: none !important;
+		margin: 0 0px !important;	
+		padding: 20px 10px 20px;
+		clear: both;
+		left: 0;
+		right: 0;
+	}
+
+
+.sf-menu {
+	display: none;
+}
+
+nav {
+	padding-left: 20px;
+	padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+header .fright {
+	float: none;
+}
+
+	.head-box3 {
+		padding: 25px 0;
+	}
+
+.foot-img {
+	display: block;
+}
+
+
+  header nav{
+		float:none;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		color:#927c67;
+		background: none;
+		margin: 0 auto;
+		
+	
+	}
+		nav:before{
+			content:'Menu:';
+			display:block;
+			margin-bottom:5px;
+			color: #454544;
+			font-weight: bold;
+			
+		}
+	.menu{display:none !important; float: none;}
+	#mm0{
+		font:12px/15px Arial, Helvetica, sans-serif;
+		color:#202020;
+		width:100%;
+		margin: 0 auto;
+		float: none;
+    outline: none;
+		border:2px solid #454544;
+	}
+	
+	.search_block {
+		padding-bottom: 10px !important;	
+	}
+}

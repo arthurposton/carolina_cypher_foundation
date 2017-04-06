@@ -1,0 +1,13 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:800);@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+
+#search2 input,
+.head-box3,
+#search input,
+#form input,
+.button1,
+#form textarea,
+.page1-box1,
+.link1,
+.text2,
+.button2 {behavior:url(js/PIE.htc);position:relative}
